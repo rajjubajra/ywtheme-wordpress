@@ -1,8 +1,8 @@
 <?php
 // Enqueue theme styles
 function base_theme_enqueue_scripts() {
-    wp_enqueue_style('base-theme-style', get_stylesheet_uri());
-    wp_enqueue_style('tailwind-base-theme-style', get_template_directory_uri().'/src/output.css', array(), _S_VERSION);
+    wp_enqueue_style('base_theme-style', get_stylesheet_uri());
+    wp_enqueue_style('base_theme_output', get_template_directory_uri().'/src/output.css');
 }
 add_action('wp_enqueue_scripts', 'base_theme_enqueue_scripts');
 
