@@ -18,5 +18,5 @@
         </nav>
         <link href="/src/output.css" rel="stylesheet">
     </header>
-    <div class="content-area">
+    <div class="bg-primary text-white p-3">
         <h1>This is from header page</h1
