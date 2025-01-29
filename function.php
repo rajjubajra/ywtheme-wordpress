@@ -32,4 +32,10 @@ function my_demo_theme_widgets() {
     ));
 }
 add_action('widgets_init', 'my_demo_theme_widgets');
+
+
+function enqueue_tailwind() {
+    wp_enqueue_style('tailwind', get_template_directory_uri() . '/src/output.css');
+  }
+  add_action('wp_enqueue_scripts', 'enqueue_tailwind');
 ?>
