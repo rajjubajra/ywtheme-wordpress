@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="main-content">
+<main class="main-content bg-blue-500 max-w-3xl mx-auto p-8">
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
             <article <?php post_class(); ?>>
