@@ -16,6 +16,7 @@ add_action('after_setup_theme', 'my_demo_theme_setup');
 // Enqueue styles
 function my_demo_theme_scripts() {
     wp_enqueue_style('main-style', get_stylesheet_uri());
+    wp_enqueue_style('tailwind', get_template_directory_uri() . '/src/output.css');
 }
 add_action('wp_enqueue_scripts', 'my_demo_theme_scripts');
 
@@ -33,9 +34,3 @@ function my_demo_theme_widgets() {
 }
 add_action('widgets_init', 'my_demo_theme_widgets');
 
-
-function enqueue_tailwind() {
-    wp_enqueue_style('tailwind', get_template_directory_uri() . '/src/output.css');
-  }
-  add_action('wp_enqueue_scripts', 'enqueue_tailwind');
-?>
