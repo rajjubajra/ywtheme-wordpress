@@ -1,10 +1,17 @@
-<?php
-get_header(); // Include the header template
-?>
-<main class="bg-red-500">
-    <h1>Welcome to the Base Theme</h1>
-    <p>This is your home page.</p>
+<?php get_header(); ?>
+
+<main class="main-content">
+    <?php if (have_posts()) : ?>
+        <?php while (have_posts()) : the_post(); ?>
+            <article <?php post_class(); ?>>
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                <?php the_content(); ?>
+            </article>
+        <?php endwhile; ?>
+    <?php else : ?>
+        <p><?php esc_html_e('No posts found.', 'my-demo-theme'); ?></p>
+    <?php endif; ?>
 </main>
-<?php
-get_footer(); // Include the footer template
-?>
+
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>

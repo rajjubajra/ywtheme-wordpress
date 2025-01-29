@@ -6,14 +6,15 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header>
-    <div class="site-logo">
-        <?php
-        if (function_exists('the_custom_logo')) {
-            the_custom_logo();
-        }
-        ?>
-    </div>
-    <h1><?php bloginfo('name'); ?></h1>
-    <p><?php bloginfo('description'); ?></p>
-</header>
+    <header class="site-header">
+        <h1><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
+        <p><?php bloginfo('description'); ?></p>
+        <nav class="main-menu">
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'primary-menu',
+            ));
+            ?>
+        </nav>
+    </header>
+    <div class="content-area">
