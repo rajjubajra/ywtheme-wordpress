@@ -1,10 +1,12 @@
 /*
-Theme Name: YW Theme Wordress 
-Theme URI: https://tshirt-nepal.com/
-Author: R D Bajra
-Author URI: https://yellow-website.com
-Description: A simple WordPress classic theme.
+Theme Name: Bootstrap Theme
+Theme URI: https://example.com
+Author: Your Name
+Author URI: https://example.com
+Description: WordPress theme with Bootstrap 5 integration
 Version: 1.0
 License: GNU General Public License v2 or later
-Text Domain: yellow-website.com
+Text Domain: bootstrap-theme
 */
+
+/* Note: Main CSS is handled through Bootstrap and custom.css */

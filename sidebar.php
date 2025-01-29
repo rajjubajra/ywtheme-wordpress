@@ -1,4 +1,5 @@
 <aside class="sidebar">
-    <h1>This is Side bar</h1>
-    <?php dynamic_sidebar('main-sidebar'); ?>
+    <?php if ( is_active_sidebar( 'main-sidebar' ) ) : ?>
+        <?php dynamic_sidebar( 'main-sidebar' ); ?>
+    <?php endif; ?>
 </aside>
