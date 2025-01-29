@@ -16,7 +16,7 @@
             ));
             ?>
         </nav>
-        <link href="./src/output.css" rel="stylesheet">
+        <link href="/src/output.css" rel="stylesheet">
     </header>
     <div class="content-area">
         <h1>This is from header page</h1
